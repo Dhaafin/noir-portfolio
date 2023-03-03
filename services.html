@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Noir Project Portofolio</title>
+</head>
+<body>
+    <script>
+        feather.replace()
+    </script>
+<!----------------------navbar---------------------->
+<div class="navbar">
+    <a href="index.html" class="logo">Noir</a>
+    <div class="toggle" onclick="navToggle();"></div>
+    <ol>
+        <li><a href="index.html"onclick="navToggle();">Home</a></li>
+        <li><a href="index.html"onclick="navToggle();">About</a></li>
+        <li><a href="index.html"onclick="navToggle();">Cover</a></li>
+        <li><a href="services.html"onclick="navToggle();">Services</a></li>
+        <li><a href="contact.html"onclick="navToggle();">Contact Us</a></li>
+    </ol>
+</div>
+<!-------------Services------------->
+<section id="services" class="services view">
+    <div class="main">
+        <h2>Our<span> Services</span></h2>
+        <h6>200k/hour = Unforgettable Experice!</h6>
+    </div>
+</section>
+<!------------Services------------>
+<section id="cover" class="cover view">
+    <div class="content">
+        <div class="frame">
+            <div class="box">
+                <img src="images/services.png" width="300" height="200" filter="grayscale(100%)">
+            </div>
+            <div class="title">Quality over quantity</div>
+            <p>We ensure your every order crafted fits to your needs.</p>
+        </div>
+        <div class="frame">
+            <div class="box">
+                <img src="images/jazz.jpg" width="300" height="200" filter="grayscale(100%)">
+            </div>
+            <div class="title">Wide range of arrangements</div>
+            <p>We craft each arrangements for each events so our music doesn't get boring.</p>
+        </div>
+        <div class="frame">
+            <div class="box">
+                <img src="images/acoustic.jpg" width="300" height="200" filter="grayscale(100%)">
+            </div>
+            <div class="title">Live flexibility</div>
+            <p>Let's sing together with our easy-listening songs!</p>
+        </div>
+    </div>
+</section>
+
+<!---------------Footer---------------->
+<footer>
+    <div class="footer-content">
+        <h3>Noir Project</h3>
+        <p>It can't be seen, can't be felt, can't be smelt, it lies behind stars and under hills, and empty holes it fills, it comes first and follows after, ends life, kills laughter </p>
+        <ul class="socials">
+            <li><a href="https://wa.me/85862519052"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="https://www.youtube.com/@noirproject."><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/noirband.id/ "><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <h4>Copyright &copy;2023 NoirProject. designed by Dhaafin</h4>
+    </div>
+</footer>
+
+<!--------------Scripts------------>
+<script>
+    const togglebar = document.querySelector('.toggle');
+    const menu = document.querySelector('ol');
+
+    function navToggle(){
+        togglebar.classList.toggle("active");
+        menu.classList.toggle("active");
+    }   
+</script>
+</body>
+</html>
+

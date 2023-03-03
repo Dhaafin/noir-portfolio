@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Noir Project Portofolio</title>
+</head>
+<body>
+    <script>
+        feather.replace()
+    </script>
+<!----------------------navbar---------------------->
+<div class="navbar">
+    <a href="index.html" class="logo">Noir</a>
+    <div class="toggle" onclick="navToggle();"></div>
+    <ol>
+        <li><a href="index.html"onclick="navToggle();">Home</a></li>
+        <li><a href="index.html"onclick="navToggle();">About</a></li>
+        <li><a href="index.html"onclick="navToggle();">Cover</a></li>
+        <li><a href="services.html"onclick="navToggle();">Services</a></li>
+        <li><a href="contact.html"onclick="navToggle();">Contact Us</a></li>
+    </ol>
+</div>
+
+<!---------------contact------------------>
+<section id="contact" class="contact view">
+    <div class="main">
+        <h2><span>Contact</span> Us</h2>
+        <h6>Work your events with our team!</h6>
+    </div>
+    <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7927.710802516449!2d107.44393947486878!3d-6.5399378072939545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e690e65864f9f83%3A0xfb92d99231f47841!2sNagri%20Kaler%2C%20Purwakarta%2C%20Purwakarta%20Regency%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1677644998851!5m2!1sen!2sid" width="450" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        <form action="">
+            <div class="input-group">
+                <i data-feather="user"></i>
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="input-group">
+                <i data-feather="mail"></i>
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="input-group">
+                <i data-feather="phone"></i>
+                <input type="text" placeholder="Your Phone Number">
+            </div>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </div>
+</section> 
+<!---------------Footer---------------->
+<footer>
+    <div class="footer-content">
+        <h3>Noir Project</h3>
+        <p>It can't be seen, can't be felt, can't be smelt, it lies behind stars and under hills, and empty holes it fills, it comes first and follows after, ends life, kills laughter </p>
+        <ul class="socials">
+            <li><a href="https://wa.me/85862519052"><i class="fab fa-whatsapp"></i></a></li>
+            <li><a href="https://www.youtube.com/@noirproject."><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/noirband.id/ "><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <h4>Copyright &copy;2023 NoirProject. designed by Dhaafin</h4>
+    </div>
+</footer>
+
+<!--------------Scripts------------>
+<script>
+    const togglebar = document.querySelector('.toggle');
+    const menu = document.querySelector('ol');
+
+    function navToggle(){
+        togglebar.classList.toggle("active");
+        menu.classList.toggle("active");
+    }   
+</script>
+</body>
+</html>
